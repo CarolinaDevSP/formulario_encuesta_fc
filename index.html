@@ -1,0 +1,81 @@
+<!Doctype>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1 id="title">Encuesta de Navidad</h1>
+    <p id="description"> Gracias por tomarte un tiempo y responder a esta encuesta :)</p>
+    <form id="survey-form">
+    <hr>
+      <div class="form-group">
+      <label for="name" id="name-label">Nombre :<input id="name" class="inline"type="text" placeholder="Ingrese Nombre" required></label>
+      </div>
+      <div class="form-group">
+      <label for="email" id="email-label">Correo Electrónico :<input id="email" class="inline"type="email" placeholder="Ingrese Correo" required></label>
+      </div>
+      <div class="form-group">
+      <label for="number" id="number-label">Edad :<input id="number" class="inline"type="number" min="1" max="3" placeholder="Ingrese edad"></label>   
+      </div>
+    <hr>
+      <div class="form-group">
+      <label>¿Que es lo que mas te gusta de la navidad?
+        <select id="dropdown" name="dropdown" class="inline">
+            <option value="">(elige una opcion)</option>
+            <option value="1">Los regalos</option>
+            <option value="2">La comida</option>
+            <option value="3">Estar en familia</option>
+            <option value="4">Celebrar el nacimiento de Jesus</option>
+         </select>
+      </label>
+      </div>
+      
+      <div class="form-group">
+      <label>¿ Tienes planes para Navidad?
+      <label> <input type="radio" class="inline-section2" name="planes-radio" value="si">Si</label>
+      <label><input type="radio" class="inline-section2" name="planes-radio" value="no">No</label>
+      <label> <input type="radio" class="inline-section2" name="planes-radio" value="nose">No estoy seguro</label>
+      </label>
+      </div>
+
+      <div class="form-group">
+      <label>¿Cuál es tu cancion de navidad favorita?
+        <select id="song" name="song" class="inline">
+            <option value="">(elige una cancion)</option>
+            <option value="1">Los peces en el rio</option>
+            <option value="2">Rodolfo el reno</option>
+            <option value="3">Blanca Navidad</option>
+            <option value="4">Campana sobre campana</option>
+          </select>
+      </label>
+      </div>
+      
+      <div class="form-group">
+      <label>¿Cómo lo celebras?
+      <label> <input name="cbx1" class="inline-section2" type="checkbox" value="1">En familia</label>
+      <label> <input name="cbx2" class="inline-section2" type="checkbox"value="2">Con los amigos</label>
+      <label> <input name="cbx3" class="inline-section2" type="checkbox" value="3">De viaje</label>
+      <label> <input name="cbx4" class="inline-section2" type="checkbox" value="4">Doy obsequios</label>
+      <label> <input name="cbx5" class="inline-section2" type="checkbox" value="5">Decoro mi arbol</label>
+      <label> <input name="cbx6" class="inline-section2" type="checkbox" value="6">Como panetón</label>
+      <label> <input name="cbx7" class="inline-section2" type="checkbox" value="7">Me gusta tomar chocolate</label>
+      <label> <input name="cbx8" class="inline-section2" type="checkbox" value="8">Ceno pavo</label>
+      <label> <input name="cbx9" class="inline-section2" type="checkbox" value="9">Canto Villancicos</label>
+      <label> <input name="cbx11" class="inline-section2" type="checkbox" value="10">Voy a la iglesia</label>
+      </label>
+      </div>
+
+      <div class="form-group">
+      <label>¿Algun comentario adicional?</label>
+      <textarea></textarea>
+      </div>
+
+      <hr>
+      <input type="submit" id="submit" name="btn">
+
+    </form>
+  </body>
+</html>
